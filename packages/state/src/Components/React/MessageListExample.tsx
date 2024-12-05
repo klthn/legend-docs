@@ -25,7 +25,7 @@ function App() {
 
   // Username
   const userName = useObservable(() => {
-    const p = profile.get()
+    const p = profile.data.get()
     return p ?
         p.first_name + ' ' + p.last_name :
         ''
